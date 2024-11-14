@@ -65,11 +65,20 @@ plt.show()
 ```
 ## Output:
 
-## Display the input Image , Display the result of Opening , Display the result of Closing
+## Display the input Image 
+
+![Screenshot 2024-11-14 155959](https://github.com/user-attachments/assets/20087658-c332-460c-805f-24928ed91595)
 
 
+## Display the result of Opening 
+![Screenshot 2024-11-14 160008](https://github.com/user-attachments/assets/6106c38a-03fe-4886-bcf1-28ec3e3dd531)
 
-![Screenshot 2024-11-14 154747](https://github.com/user-attachments/assets/008fdbf6-0059-4cec-8fb1-e842ffe7e9bd)
+
+## Display the result of Closing
+
+
+![Screenshot 2024-11-14 160013](https://github.com/user-attachments/assets/729ef73d-ef97-45dd-a3b4-1c9928791674)
+
 
 
 
