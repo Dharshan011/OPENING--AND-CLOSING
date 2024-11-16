@@ -29,19 +29,24 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Step 1: Load the image using cv2.imread()
+image = cv2.imread("Fish.jpg")  
 
-image = cv2.imread("demo.png")  
-
+# Step 2: Create a structuring element (5x5 rectangular)
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
 
+# Step 3: Use Opening operation (erosion followed by dilation)
 opening_image = cv2.morphologyEx(image, cv2.MORPH_OPEN, kernel)
 
+# Step 4: Use Closing operation (dilation followed by erosion)
 closing_image = cv2.morphologyEx(image, cv2.MORPH_CLOSE, kernel)
 
+# Convert images from BGR to RGB for Matplotlib
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 opening_image_rgb = cv2.cvtColor(opening_image, cv2.COLOR_BGR2RGB)
 closing_image_rgb = cv2.cvtColor(closing_image, cv2.COLOR_BGR2RGB)
 
+# Plot the original, opening, and closing images using Matplotlib
 plt.figure(figsize=(10, 5))
 
 plt.subplot(1, 3, 1)
@@ -65,19 +70,17 @@ plt.show()
 ```
 ## Output:
 
-## Display the input Image 
-
-![Screenshot 2024-11-14 155959](https://github.com/user-attachments/assets/20087658-c332-460c-805f-24928ed91595)
-
-
-## Display the result of Opening 
-![Screenshot 2024-11-14 160008](https://github.com/user-attachments/assets/6106c38a-03fe-4886-bcf1-28ec3e3dd531)
+### Display the input Image
+![image](https://github.com/user-attachments/assets/c6772ac7-5d88-46ba-9c06-f63c15e3c7ed)
 
 
-## Display the result of Closing
+### Display the result of Opening
+![image](https://github.com/user-attachments/assets/1dc47e42-1357-449e-9d9b-6984ddb666a6)
 
 
-![Screenshot 2024-11-14 160013](https://github.com/user-attachments/assets/729ef73d-ef97-45dd-a3b4-1c9928791674)
+
+### Display the result of Closing
+![image](https://github.com/user-attachments/assets/4f0cd2c5-bbdd-4cbc-bf99-ab1bc25001be)
 
 
 
